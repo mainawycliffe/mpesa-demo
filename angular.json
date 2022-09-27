@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "mpesa-demo:build:production",
+            "firebaseProject": "fintech-2022",
+            "firebaseHostingSite": "fintech-2022"
+          }
         }
       }
     }
