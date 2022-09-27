@@ -13,12 +13,14 @@ import { AuthSessionService } from '../auth/auth-session.service';
           <button (click)="logout()" class="text-white">Logout</button>
         </div>
       </div>
-      <div class="flex flex-col flex-1 py-6 px-4">
-        <div class="flex flex-col w-full max-w-[25rem] p-2">
-          <app-view-balance></app-view-balance>
-        </div>
-        <div class="flex flex-col w-full max-w-[25rem] p-2">
-          <app-top-up></app-top-up>
+      <div class="flex flex-col flex-1 py-6 px-4 ">
+        <div class="flex flex-col w-full max-w-[50rem] mx-auto">
+          <div class="flex flex-col w-full p-2 md:text-center">
+            <app-view-balance></app-view-balance>
+          </div>
+          <div class="flex flex-col w-full p-2">
+            <app-top-up></app-top-up>
+          </div>
         </div>
       </div>
       <div

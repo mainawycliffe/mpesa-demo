@@ -8,7 +8,7 @@ import { TopUpService } from 'src/app/top-up.service';
   template: `
     <form #topUpForm="ngForm" (submit)="onTopUp(topUpForm.value)">
       <div
-        class="flex flex-col w-full bg-blue-50 text-black rounded-lg py-8 px-6 shadow-md space-y-4 "
+        class="flex flex-col w-full bg-blue-50 text-black rounded-lg py-8 px-6 space-y-4 "
       >
         <div class="w-full font-semibold text-lg uppercase text-gray-800">
           Top-up Account
