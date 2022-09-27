@@ -16,6 +16,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { TopUpComponent } from './dashboard/top-up/top-up.component';
 import { ViewBalanceComponent } from './dashboard/view-balance/view-balance.component';
+import { SendMoneyComponent } from './dashboard/send-money/send-money.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ViewBalanceComponent } from './dashboard/view-balance/view-balance.comp
     SigninComponent,
     TopUpComponent,
     ViewBalanceComponent,
+    SendMoneyComponent,
   ],
   imports: [
     BrowserModule,

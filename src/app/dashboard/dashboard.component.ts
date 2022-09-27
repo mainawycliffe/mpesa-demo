@@ -21,6 +21,9 @@ import { AuthSessionService } from '../auth/auth-session.service';
           <div class="flex flex-col w-full p-2">
             <app-top-up></app-top-up>
           </div>
+          <div class="flex flex-col w-full p-2">
+            <app-send-money></app-send-money>
+          </div>
         </div>
       </div>
       <div
