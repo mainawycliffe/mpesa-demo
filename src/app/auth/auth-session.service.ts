@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthSessionService {
-  constructor(private firebaseAuth: AngularFireAuth) {}
+  constructor(private firebaseAuth: AngularFireAuth, private router: Router) {}
 
   login(email: string, password: string) {
     return this.firebaseAuth.signInWithEmailAndPassword(email, password);
@@ -15,7 +16,8 @@ export class AuthSessionService {
     return this.firebaseAuth.createUserWithEmailAndPassword(email, password);
   }
 
-  logout() {
-    return this.firebaseAuth.signOut();
+  async logout() {
+    await this.firebaseAuth.signOut();
+    this.router.navigate(['/auth/signin']);
   }
 }

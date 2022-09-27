@@ -55,7 +55,7 @@ import { AuthSessionService } from '../../auth-session.service';
             class="border border-gray-500 text-xl font-bold py-4 px-6 rounded-lg text-white bg-blue-500 shadow-md hover:bg-gray-700"
             type="submit"
           >
-            Sign Up
+            Sign In
           </button>
         </div>
         <div class="flex flex-col w-full">
