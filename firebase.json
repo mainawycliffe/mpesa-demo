@@ -1,6 +1,7 @@
 {
   "hosting": [
     {
+      "target": "mpesa-demo",
       "public": "dist/mpesa-demo",
       "ignore": [
         "**/.*"
