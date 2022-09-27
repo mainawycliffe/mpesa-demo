@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fintech-2022"
+  },
+  "targets": {
+    "fintech-2022": {
+      "hosting": {
+        "mpesa-demo": [
+          "fintech-2022"
+        ]
+      }
+    }
+  }
+}
